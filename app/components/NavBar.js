@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import MainLogo from "@/public/snap-and-code_main-logo.svg";
+import styles from "./navbar.module.css";
 
 export function NavBarItem({ href, linkText }) {
   const currentRoute = usePathname();
@@ -10,7 +11,11 @@ export function NavBarItem({ href, linkText }) {
     <li className="nav-item">
       <Link
         href={href}
-        className={`${currentRoute === href ? "active nav-link" : "nav-link"}`}
+        className={`${
+          currentRoute === href
+            ? `${styles.active} ${styles.nav_link} nav-link`
+            : `${styles.nav_link} nav-link`
+        }`}
       >
         {linkText}
       </Link>
@@ -58,7 +63,7 @@ export function NavBarDropDown({ topLevelHref, topLevelLinkText, children }) {
 
 export default function NavBar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
         <Link href="/" className="navbar-brand">
           <Image src={MainLogo} width={160} height={160} alt="Snap & Code;" />
@@ -77,34 +82,8 @@ export default function NavBar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <NavBarItem href="/" linkText="Home" />
-            <NavBarItem href="/all-about-us" linkText="All About Us" />
-            <NavBarItem
-              href="/policies-enrolment"
-              linkText="Policies and Enrolment"
-            />
-            <NavBarItem href="/school-calendar" linkText="School Calendar" />
-
-            <NavBarDropDown topLevelHref="/classes" topLevelLinkText="Classes">
-              <NavBarDropDownMenuItem
-                href="/classes/junior-infants"
-                linkText="Junior Infants"
-              />
-              <NavBarDropDownMenuItem
-                href="/classes/senior-infants"
-                linkText="Senior Infants"
-              />
-              <NavBarDropDownMenuItem
-                href="/classes/first-class"
-                linkText="First"
-              />
-            </NavBarDropDown>
-            <NavBarItem href="/active-school" linkText="Active School" />
-            <NavBarDropDown topLevelHref="/archive" topLevelLinkText="Archive">
-              <NavBarDropDownMenuItem
-                href="/archive/2021-2022"
-                linkText="2021-2022"
-              />
-            </NavBarDropDown>
+            <NavBarItem href="/about-us" linkText="About Us" />
+            <NavBarItem href="/projects" linkText="Projects" />
           </ul>
         </div>
       </div>

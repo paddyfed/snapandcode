@@ -1,0 +1,15 @@
+.nav_link,
+.nav_link:hover,
+.nav_link:focus,
+.nav_link:visited {
+  color: var(--foreground);
+  border-radius: 4px;
+}
+
+.active,
+.active:hover,
+.active:focus,
+.active:visited {
+  color: var(--background);
+  background-color: var(--foreground);
+}
