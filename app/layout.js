@@ -1,4 +1,7 @@
+import "bootstrap/dist/css/bootstrap.css";
 import "./globals.css";
+import BootstrapClient from "./components/BootstrapClient";
+import NavBar from "./components/NavBar";
 
 export const metadata = {
   title: "Snap and Code",
@@ -33,7 +36,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <NavBar />
+        {children}
+        <BootstrapClient />
+      </body>
     </html>
   );
 }
