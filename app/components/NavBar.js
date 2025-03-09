@@ -62,11 +62,13 @@ export function NavBarDropDown({ topLevelHref, topLevelLinkText, children }) {
 }
 
 export default function NavBar() {
+  const currentRoute = usePathname();
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
         <Link href="/" className="navbar-brand">
           <Image src={MainLogo} width={160} height={160} alt="Snap & Code;" />
+          <span className="ms-3">{currentRoute}</span>
         </Link>
         <button
           className="navbar-toggler"
