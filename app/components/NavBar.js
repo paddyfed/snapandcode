@@ -13,8 +13,8 @@ export function NavBarItem({ href, linkText }) {
         href={href}
         className={`${
           currentRoute === href
-            ? `${styles.active} ${styles.nav_link} nav-link`
-            : `${styles.nav_link} nav-link`
+            ? `${styles.active} ${styles.nav_link} nav-link ps-2`
+            : `${styles.nav_link} nav-link ps-2`
         }`}
       >
         {linkText}
@@ -68,7 +68,6 @@ export default function NavBar() {
       <div className="container-fluid">
         <Link href="/" className="navbar-brand">
           <Image src={MainLogo} width={160} height={160} alt="Snap & Code;" />
-          <span className="ms-3">{currentRoute}</span>
         </Link>
         <button
           className="navbar-toggler"
