@@ -70,7 +70,7 @@ export default function NavBar() {
           <Image src={MainLogo} width={160} height={160} alt="Snap & Code;" />
         </Link>
         <button
-          className="navbar-toggler"
+          className={`btn ${styles.btn_primary} navbar-toggler`}
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -78,7 +78,7 @@ export default function NavBar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span>Menu</span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">

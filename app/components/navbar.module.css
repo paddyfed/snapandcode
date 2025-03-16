@@ -13,3 +13,8 @@
   color: var(--background) !important;
   background-color: var(--foreground) !important;
 }
+
+.btn_primary {
+  color: var(--foreground) !important;
+  border-color: var(--foreground) !important;
+}
