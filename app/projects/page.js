@@ -20,7 +20,6 @@ export default function Projects() {
           ></iframe>
         </p>
       </main>
-      <footer></footer>
     </>
   );
 }

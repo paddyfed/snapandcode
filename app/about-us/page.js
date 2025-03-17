@@ -8,7 +8,6 @@ export default function AboutUs() {
       <main className={styles.main}>
         <h1>About Us</h1>
       </main>
-      <footer></footer>
     </>
   );
 }
