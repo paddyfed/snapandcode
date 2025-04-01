@@ -1,7 +1,9 @@
 import styles from "@/app/page.module.css";
 import Image from "next/image";
-import MarchBoard2025 from "@/public/2025-04-01_Work-Board@0.25x.png";
+import MarchBoard2025 from "@/public/2025-03-01_Work-Board@0.25x.png";
 import DecemberBoard2024 from "@/public/2024-12-01_Work-Board@0.25x.png";
+import JanuaryBoard2025 from "@/public/2025-01-01_Work-Board@0.25x.png";
+import FebruaryBoard2025 from "@/public/2025-02-01_Work-Board@0.25x.png";
 import MainLogo from "@/public/snap-and-code_main-logo.svg";
 
 export default function Projects() {
@@ -23,6 +25,46 @@ export default function Projects() {
               <Image
                 src={MarchBoard2025}
                 alt="Projects completed in March 2025"
+                className="img-fluid"
+              />
+            </div>
+          </div>
+        </article>
+        <article className="container">
+          <h2>February 2025</h2>
+          <div className="row">
+            <div className="col-md-2 mt-2  order-md-last">
+              <h3>Programs Used</h3>
+              <ul>
+                <li>Adobe Illustrator</li>
+                <li>Canva</li>
+                <li>Adobe Premiere Pro</li>
+              </ul>
+            </div>
+            <div className="col-md-8 mt-2 order-md-first">
+              <Image
+                src={FebruaryBoard2025}
+                alt="Projects completed in February 2025"
+                className="img-fluid"
+              />
+            </div>
+          </div>
+        </article>
+
+        <article className="container">
+          <h2>January 2025</h2>
+          <div className="row">
+            <div className="col-md-4 mt-2 order-md-last">
+              <h3>Programs Used</h3>
+              <ul>
+                <li>Adobe Illustrator</li>
+                <li>Canva</li>
+              </ul>
+            </div>
+            <div className="col-md-8 order-md-first">
+              <Image
+                src={JanuaryBoard2025}
+                alt="Projects completed in January 2025"
                 className="img-fluid"
               />
             </div>
