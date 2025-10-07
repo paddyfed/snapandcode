@@ -9,6 +9,7 @@ import MayBoard2025 from "@/public/2025-05-01_Work-Board@0.25x.png";
 import JuneBoard2025 from "@/public/2025-06-01_Work-Board@0.25x.png";
 import JulyBoard2025 from "@/public/2025-07-01_Work-Board@0.25x.png";
 import AugustBoard2025 from "@/public/2025-08-01_Work-Board@0.25x.png";
+import SeptemberBoard2025 from "@/public/2025-09-01_Work-Board@0.25x.png";
 import MainLogo from "@/public/snap-and-code_main-logo.svg";
 
 export default function Projects() {
@@ -16,6 +17,28 @@ export default function Projects() {
     <>
       <main className={styles.main}>
         <h1>Projects</h1>
+        <article className="container">
+          <h2>September 2025</h2>
+          <div className="row">
+            <div className="col-md-2 mt-2 order-md-last">
+              <h3>Programs Used</h3>
+              <ul>
+                <li>Adobe Illustrator</li>
+                <li>Canva</li>
+                <li>Adobe Premiere Pro</li>
+                <li>Adobe Lightroom</li>
+                <li>Adobe Photoshop</li>
+              </ul>
+            </div>
+            <div className="col-md-8 mt-2 order-md-first">
+              <Image
+                src={SeptemberBoard2025}
+                alt="Projects completed in September 2025"
+                className="img-fluid"
+              />
+            </div>
+          </div>
+        </article>
         <article className="container">
           <h2>August 2025</h2>
           <div className="row">
