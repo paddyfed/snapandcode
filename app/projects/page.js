@@ -13,6 +13,8 @@ import SeptemberBoard2025 from "@/public/2025-09-01_Work-Board@0.25x.png";
 import OctoberBoard2025 from "@/public/2025-10-01_Work-Board@0.25x.png";
 import NovemberBoard2025 from "@/public/2025-11-01_Work-Board@0.25x.png";
 import DecemberBoard2025 from "@/public/2025-12-01_Work-Board@0.25x.png";
+import JanuaryBoard2026 from "@/public/2026-01-01_Work-Board@0.25x.png";
+import FebruaryBoard2026 from "@/public/2026-02-01_Work-Board@0.25x.png";
 import MainLogo from "@/public/snap-and-code_main-logo.svg";
 
 export default function Projects() {
@@ -20,6 +22,46 @@ export default function Projects() {
     <>
       <main className={styles.main}>
         <h1>Projects</h1>
+        <article className="container">
+          <h2>February 2026</h2>
+          <div className="row">
+            <div className="col-md-2 mt-2 order-md-last">
+              <h3>Programs Used</h3>
+              <ul>
+                <li>Adobe Illustrator</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe InDesign</li>
+              </ul>
+            </div>
+            <div className="col-md-8 mt-2 order-md-first">
+              <Image
+                src={FebruaryBoard2026}
+                alt="Projects completed in February 2026"
+                className="img-fluid"
+              />
+            </div>
+          </div>
+        </article>
+        <article className="container">
+          <h2>January 2026</h2>
+          <div className="row">
+            <div className="col-md-2 mt-2 order-md-last">
+              <h3>Programs Used</h3>
+              <ul>
+                <li>Adobe Illustrator</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe InDesign</li>
+              </ul>
+            </div>
+            <div className="col-md-8 mt-2 order-md-first">
+              <Image
+                src={JanuaryBoard2026}
+                alt="Projects completed in January 2026"
+                className="img-fluid"
+              />
+            </div>
+          </div>
+        </article>
         <article className="container">
           <h2>December 2025</h2>
           <div className="row">
