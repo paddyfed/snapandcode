@@ -13,8 +13,8 @@ export function NavBarItem({ href, linkText }) {
         href={href}
         className={`${
           currentRoute === href
-            ? `${styles.active} ${styles.nav_link} nav-link ps-2`
-            : `${styles.nav_link} nav-link ps-2`
+            ? `${styles.active} ${styles.nav_link} nav-link ps-2 mx-1`
+            : `${styles.nav_link} nav-link ps-2 mx-1`
         }`}
       >
         {linkText}

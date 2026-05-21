@@ -1,13 +1,38 @@
 .main {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
   gap: 3em;
   flex-grow: 1;
 }
-
+.mainPage {
+  display: flex;
+  justify-content: space-between;
+  gap: 3em;
+  flex-grow: 1;
+}
 .mainlogo {
-  width: 300px;
+  width: 30vw;
   height: auto;
+}
+@media (min-width: 992px) {
+  .mainlogo {
+    width: auto;
+    height: calc(100vh - 200px);
+  }
+}
+
+.mainServicesList {
+  list-style: none;
+  text-align: right;
+  font-size: clamp(1rem, 5vw, 10rem);
+  cursor: default;
+  user-select: none;
+}
+
+.mainServicesList li {
+  transition: all 0.5s ease-out;
+}
+.mainServicesList li:hover {
+  font-size: clamp(1rem, 6vw, 10rem);
 }
