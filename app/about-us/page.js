@@ -1,6 +1,8 @@
 import styles from "@/app/page.module.css";
 import Image from "next/image";
 import MainLogo from "@/public/snap-and-code_main-logo.svg";
+import PaddyPhoto from "@/public/paddy-picture-graduation.png";
+import PaddyName from "@/public/2026-05-15_PaddyNameplate.svg";
 import Link from "next/link";
 
 export default function AboutUs() {
@@ -10,6 +12,13 @@ export default function AboutUs() {
         <h1>About Us</h1>
         <article>
           <h2>Paddy</h2>
+          <figure className={styles.figure}>
+            <Image src={PaddyPhoto} alt="Paddy" className={`img-fluid`} />
+            <figcaption className={styles.figCaption}>
+              <Image src={PaddyName} alt="Paddy" className={`img-fluid`} />
+            </figcaption>
+          </figure>
+
           <h3>Profile</h3>
           <p>Blurb</p>
           <h3>Qualifications</h3>

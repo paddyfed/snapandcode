@@ -4,6 +4,7 @@
   align-items: center;
   gap: 3em;
   flex-grow: 1;
+  padding: 1em;
 }
 .mainPage {
   display: flex;
@@ -35,4 +36,47 @@
 }
 .mainServicesList li:hover {
   font-size: clamp(1rem, 6vw, 10rem);
+}
+
+.photoImage {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 70%,
+    rgba(30, 35, 81, 1) 90%,
+    rgba(30, 35, 81, 1) 100%
+  );
+  z-index: 1;
+}
+
+.figure {
+  position: relative;
+  margin: 0;
+  width: fit-content;
+}
+
+.figCaption {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(220, 194, 187, 1) 10%,
+    rgba(220, 194, 187, 1) 100%
+  );
+  color: #fff;
+  padding: 3px;
+  margin-top: 0.5em;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  .figCaption {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(30, 35, 81, 1) 10%,
+      rgba(30, 35, 81, 1) 100%
+    );
+  }
 }
