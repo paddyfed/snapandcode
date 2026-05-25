@@ -64,7 +64,7 @@
 .aboutMeArticle {
   background-color: var(--foreground);
   padding: 2rem;
-  border-radius: 1rem;
+  border-radius: var(--bs-border-radius-xl);
   display: flex;
 
   gap: 1rem;
@@ -81,5 +81,5 @@
 .aboutMeArticle div {
   background-color: var(--background);
   padding: 2rem;
-  border-radius: 1rem;
+  border-radius: var(--bs-border-radius-xl);
 }
