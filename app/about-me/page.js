@@ -9,7 +9,7 @@ export default function AboutUs() {
   return (
     <>
       <main className={styles.main}>
-        <h1>About Us</h1>
+        <h1>About Me</h1>
         <article className={styles.aboutMeArticle}>
           <h2>
             <figure className={styles.figure}>

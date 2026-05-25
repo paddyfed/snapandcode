@@ -83,7 +83,7 @@ export default function NavBar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <NavBarItem href="/" linkText="Home" />
-            <NavBarItem href="/about-us" linkText="About Us" />
+            <NavBarItem href="/about-me" linkText="About Me" />
             <NavBarItem href="/projects" linkText="Projects" />
           </ul>
         </div>
