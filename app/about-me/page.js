@@ -29,7 +29,7 @@ export default function AboutUs() {
               This introduced me to computer graphics, creating code and how to
               bring that creation to a wider audience by publishing online. This
               led me to the Applied Computing course in Letterkenny IT (now ATU)
-              in the early 2000’s. A few years after gaining my degree, I landed
+              in the early 2000's. A few years after gaining my degree, I landed
               a job as a Business Analyst. However, after many years trying, it
               was clear that this was not the role I was best suited for.
             </p>
