@@ -404,9 +404,7 @@ export default function Projects() {
               </ul>
             </div>
             <div className="col-md-8 order-md-first">
-              <div className="ratio ratio-16x9">
-                <Video src="MI_LearningHub.mp4" />
-              </div>
+              <Video src="MI_LearningHub.mp4" />
             </div>
           </div>
           <div className="row">
