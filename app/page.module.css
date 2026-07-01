@@ -70,6 +70,7 @@
   gap: 1rem;
   flex-wrap: wrap;
   width: clamp(30ch, 80rem, 90%);
+  justify-content: center;
 }
 
 .aboutMeProfile {
