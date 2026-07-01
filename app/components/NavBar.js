@@ -84,6 +84,7 @@ export default function NavBar() {
           <ul className="navbar-nav">
             <NavBarItem href="/" linkText="Home" />
             <NavBarItem href="/websites" linkText="Website Design" />
+            <NavBarItem href="/videography" linkText="Videography" />
             <NavBarItem href="/about-me" linkText="About Me" />
             <NavBarItem href="/projects" linkText="Projects" />
           </ul>

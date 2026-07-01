@@ -20,6 +20,7 @@ import AprilBoard2026 from "@/public/2026-04-01_Work-Board@0.25x.png";
 import MayBoard2026 from "@/public/2026-05-01_Work-Board@0.25x.png";
 import JuneBoard2026 from "@/public/2026-06-01_Work-Board@0.25x.png";
 import MainLogo from "@/public/snap-and-code_main-logo.svg";
+import { Video } from "../components/Video";
 
 export default function Projects() {
   return (
@@ -403,18 +404,9 @@ export default function Projects() {
               </ul>
             </div>
             <div className="col-md-8 order-md-first">
-              <p className="ratio ratio-16x9">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/CDX1FhTLYlg?si=St3OsQrPD_rs9GU2"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                ></iframe>
-              </p>
+              <div className="ratio ratio-16x9">
+                <Video src="MI_LearningHub.mp4" />
+              </div>
             </div>
           </div>
           <div className="row">
