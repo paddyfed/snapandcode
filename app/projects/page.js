@@ -19,6 +19,7 @@ import MarchBoard2026 from "@/public/2026-03-01_Work-Board@0.25x.png";
 import AprilBoard2026 from "@/public/2026-04-01_Work-Board@0.25x.png";
 import MayBoard2026 from "@/public/2026-05-01_Work-Board@0.25x.png";
 import JuneBoard2026 from "@/public/2026-06-01_Work-Board@0.25x.png";
+import JulyBoard2026 from "@/public/2026-07-01_Work-Board@0.25x.png";
 import MainLogo from "@/public/snap-and-code_main-logo.svg";
 import { Video } from "../components/Video";
 
@@ -27,6 +28,26 @@ export default function Projects() {
     <>
       <main className={styles.main}>
         <h1>Projects</h1>
+        <article className="container">
+          <h2>July 2026</h2>
+          <div className="row">
+            <div className="col-md-2 mt-2 order-md-last">
+              <h3>Programs Used</h3>
+              <ul>
+                <li>Adobe Illustrator</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe InDesign</li>
+              </ul>
+            </div>
+            <div className="col-md-8 mt-2 order-md-first">
+              <Image
+                src={JulyBoard2026}
+                alt="Projects completed in July 2026"
+                className="img-fluid"
+              />
+            </div>
+          </div>
+        </article>
         <article className="container">
           <h2>June 2026</h2>
           <div className="row">
@@ -41,7 +62,7 @@ export default function Projects() {
             <div className="col-md-8 mt-2 order-md-first">
               <Image
                 src={JuneBoard2026}
-                alt="Projects completed in May 2026"
+                alt="Projects completed in June 2026"
                 className="img-fluid"
               />
             </div>
