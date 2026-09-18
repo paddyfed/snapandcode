@@ -1,5 +1,6 @@
 import styles from "@/app/page.module.css";
 import LightBoxCarouselForImages from "../components/LightBoxCarouselForImages";
+import LightBoxGalleryForImages from "../components/LightBoxGalleryForImages";
 
 const pocTheBlues2026Pictures = [
   {
@@ -14,6 +15,24 @@ const pocTheBlues2026Pictures = [
     alt: "2",
     label: "2",
   },
+  {
+    id: 2,
+    src: "/2025-02-01_Work-Board@0.25x.png",
+    alt: "2",
+    label: "2",
+  },
+  {
+    id: 3,
+    src: "/2025-03-01_Work-Board@0.25x.png",
+    alt: "2",
+    label: "2",
+  },
+  {
+    id: 4,
+    src: "/2025-04-01_Work-Board@0.25x.png",
+    alt: "2",
+    label: "2",
+  },
 ];
 
 export default async function PocTheBlues2026() {
@@ -21,11 +40,11 @@ export default async function PocTheBlues2026() {
     <>
       <main className={styles.main}>
         <h1>POC the Blues 2026</h1>
-        <LightBoxCarouselForImages
-          carouselId={"one"}
-          modalId={"two"}
+        <LightBoxGalleryForImages
+          carouselId={"galleryPOC"}
+          modalId={"POCModalGallery"}
           images={pocTheBlues2026Pictures}
-          modalTitle={"Poc the Blues 2026"}
+          modalTitle={"Poc the Blues 2026 Gallery"}
         />
       </main>
     </>

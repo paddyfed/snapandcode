@@ -5,9 +5,10 @@ import {
   CarouselButton,
   CarouselItem,
 } from "./BootstrapCarousel";
+import { BootstrapGallery, GalleryItem } from "./BootstrapGallery";
 import { ModalHeader, ModalBody, BootstrapModal } from "./BootstrapModal";
 
-export default function LightBoxCarouselForImages({
+export default function LightBoxGalleryForImages({
   carouselId,
   modalId,
   modalTitle,
@@ -15,36 +16,22 @@ export default function LightBoxCarouselForImages({
 }) {
   return (
     <>
-      <div className="w-50 m-auto">
+      <div className="w-75 m-auto">
         <h2 className="mt-2">{modalTitle}</h2>
-        <BootstrapCarousel id={carouselId}>
-          <CarouselIndicators>
-            {images.map((image) => {
-              return (
-                <CarouselButton
-                  key={image.id}
-                  id={image.id}
-                  target={carouselId}
-                  label={image.label}
-                />
-              );
-            })}
-          </CarouselIndicators>
-          <CarouselInner>
-            {images.map((image) => {
-              return (
-                <CarouselItem
-                  key={image.id}
-                  id={image.id}
-                  src={image.src}
-                  alt={image.alt}
-                  modalId={modalId}
-                  carouselTarget={`${carouselId}Modal`}
-                />
-              );
-            })}
-          </CarouselInner>
-        </BootstrapCarousel>
+        <BootstrapGallery id={carouselId}>
+          {images.map((image) => {
+            return (
+              <GalleryItem
+                key={image.id}
+                id={image.id}
+                src={image.src}
+                alt={image.alt}
+                modalId={modalId}
+                carouselTarget={`${carouselId}Modal`}
+              ></GalleryItem>
+            );
+          })}
+        </BootstrapGallery>
       </div>
       <BootstrapModal modalId={modalId}>
         <ModalHeader modalTitle={modalTitle} />

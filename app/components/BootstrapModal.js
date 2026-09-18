@@ -1,4 +1,4 @@
-export default function BootstrapModal({ modalId, children }) {
+export function BootstrapModal({ modalId, children }) {
   return (
     <div
       className="modal fade"

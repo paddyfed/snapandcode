@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export function BootstrapCarousel({ id, images, children }) {
+export function BootstrapCarousel({ id, children }) {
   return (
     <>
       <div id={id} className={`carousel slide mt-2`}>
