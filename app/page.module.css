@@ -84,10 +84,3 @@
   padding: 2rem;
   border-radius: var(--bs-border-radius-xl);
 }
-
-.Rxr {
-  width: 25vw;
-  height: auto;
-  position: relative;
-  object-fit: contain;
-}

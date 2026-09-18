@@ -33,7 +33,7 @@ export function ModalFooter({ children }) {
 export function ModalHeader({ modalTitle }) {
   return (
     <>
-      <div className="modal-header bg-primary">
+      <div className="modal-header modal-header-color">
         <h1 className="modal-title fs-5">
           {modalTitle ? modalTitle : "Modal Title"}
         </h1>
