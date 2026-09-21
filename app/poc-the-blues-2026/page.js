@@ -1,41 +1,24 @@
 import styles from "@/app/page.module.css";
-import LightBoxCarouselForImages from "../components/LightBoxCarouselForImages";
 import LightBoxGalleryForImages from "../components/LightBoxGalleryForImages";
+import fs from "fs";
+import path from "path";
 
-const pocTheBlues2026Pictures = [
-  {
-    id: 0,
-    src: "/2025-01-01_Work-Board@0.25x.png",
-    alt: "1",
-    label: "1",
-  },
-  {
-    id: 1,
-    src: "/2024-12-01_Work-Board@0.25x.png",
-    alt: "2",
-    label: "2",
-  },
-  {
-    id: 2,
-    src: "/2025-02-01_Work-Board@0.25x.png",
-    alt: "2",
-    label: "2",
-  },
-  {
-    id: 3,
-    src: "/2025-03-01_Work-Board@0.25x.png",
-    alt: "2",
-    label: "2",
-  },
-  {
-    id: 4,
-    src: "/2025-04-01_Work-Board@0.25x.png",
-    alt: "2",
-    label: "2",
-  },
-];
+const directory = path.join(process.cwd(), "public/images/poc-the-blues-2026");
+
+const pocTheBlues2026Pictures = [];
 
 export default async function PocTheBlues2026() {
+  const fileNames = fs.readdirSync(directory);
+
+  for (let x = 0; x < fileNames.length; x++) {
+    pocTheBlues2026Pictures.push({
+      id: x,
+      src: `/images/poc-the-blues-2026/${fileNames[x]}`,
+      alt: fileNames[x],
+      label: fileNames[x],
+    });
+  }
+
   return (
     <>
       <main className={styles.main}>
