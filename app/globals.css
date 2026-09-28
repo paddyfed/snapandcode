@@ -48,7 +48,7 @@ a {
   }
 }
 
-.modal-header-color {
+.modal-background-color {
   color: var(--foreground);
   background: var(--background);
 }

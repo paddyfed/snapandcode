@@ -17,7 +17,7 @@ export function BootstrapModal({ modalId, children }) {
 export function ModalBody({ children }) {
   return (
     <>
-      <div className="modal-body">{children}</div>
+      <div className="modal-body modal-background-color">{children}</div>
     </>
   );
 }
@@ -33,7 +33,7 @@ export function ModalFooter({ children }) {
 export function ModalHeader({ modalTitle }) {
   return (
     <>
-      <div className="modal-header modal-header-color">
+      <div className="modal-header modal-background-color">
         <h1 className="modal-title fs-5">
           {modalTitle ? modalTitle : "Modal Title"}
         </h1>
