@@ -26,6 +26,8 @@ export default function LightBoxGalleryForImages({
                 id={image.id}
                 src={image.src}
                 alt={image.alt}
+                height={image.height}
+                width={image.width}
                 modalId={modalId}
                 carouselTarget={`${carouselId}Modal`}
               ></GalleryItem>
@@ -57,6 +59,8 @@ export default function LightBoxGalleryForImages({
                     id={image.id}
                     src={image.src}
                     alt={image.alt}
+                    height={image.height}
+                    width={image.width}
                   />
                 );
               })}

@@ -10,7 +10,15 @@ export function BootstrapGallery({ id, children }) {
   );
 }
 
-export function GalleryItem({ id, src, alt, modalId, carouselTarget }) {
+export function GalleryItem({
+  id,
+  src,
+  alt,
+  width,
+  height,
+  modalId,
+  carouselTarget,
+}) {
   const linkAttributes = { href: "#" };
   if (modalId) {
     linkAttributes["data-bs-toggle"] = "modal";
@@ -30,8 +38,8 @@ export function GalleryItem({ id, src, alt, modalId, carouselTarget }) {
       <a {...linkAttributes}>
         <Image
           src={src}
-          width={1200}
-          height={630}
+          width={width}
+          height={height}
           alt={alt}
           {...imageAttributes}
         />

@@ -59,7 +59,15 @@ export function CarouselButton({ id, target, label }) {
   return <button {...attributes}></button>;
 }
 
-export function CarouselItem({ id, src, alt, modalId, carouselTarget }) {
+export function CarouselItem({
+  id,
+  src,
+  alt,
+  width,
+  height,
+  modalId,
+  carouselTarget,
+}) {
   const articleAttributes = { className: "carousel-item" };
   if (id === 0) {
     articleAttributes.className = "carousel-item active";
@@ -84,12 +92,13 @@ export function CarouselItem({ id, src, alt, modalId, carouselTarget }) {
       <a {...linkAttributes}>
         <Image
           src={src}
-          width={1200}
-          height={630}
+          width={width}
+          height={height}
           alt={alt}
           {...imageAttributes}
         />
       </a>
+      <div className="carousel-caption d-none d-md-block">{alt}</div>
     </article>
   );
 }
