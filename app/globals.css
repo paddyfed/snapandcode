@@ -47,3 +47,8 @@ a {
     color-scheme: dark;
   }
 }
+
+.modal-background-color {
+  color: var(--foreground);
+  background: var(--background);
+}
