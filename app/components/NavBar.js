@@ -85,8 +85,12 @@ export default function NavBar() {
             <NavBarItem href="/" linkText="Home" />
             <NavBarItem href="/websites" linkText="Website Design" />
             <NavBarItem href="/videography" linkText="Videography" />
-            <NavBarItem href="/about-me" linkText="About Me" />
+            <NavBarItem
+              href="/poc-the-blues-2026"
+              linkText="Poc the Blues 2026"
+            />
             <NavBarItem href="/projects" linkText="Projects" />
+            <NavBarItem href="/about-me" linkText="About Me" />
           </ul>
         </div>
       </div>
