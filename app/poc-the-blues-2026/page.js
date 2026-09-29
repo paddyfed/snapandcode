@@ -7,9 +7,9 @@ import { DOMParser, onErrorStopParsing } from "@xmldom/xmldom";
 
 const directory = path.join(process.cwd(), "public/images/poc-the-blues-2026");
 
-const pocTheBlues2026Pictures = [];
-
 export default async function PocTheBlues2026() {
+  const pocTheBlues2026Pictures = [];
+
   // find all files in the directory
   const fileNames = fs.readdirSync(directory);
 
@@ -29,7 +29,7 @@ export default async function PocTheBlues2026() {
       domParser: new DOMParser({ onError: onErrorStopParsing }),
     });
 
-    // add the images to the list, inlcude the image height width and caption if available, otherwise the caption will be the filename
+    // add the images to the list, include the image height width and caption if available, otherwise the caption will be the filename
     pocTheBlues2026Pictures.push({
       id: x,
       src: `/images/poc-the-blues-2026/${fileNames[x]}`,
